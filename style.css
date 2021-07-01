@@ -1,15 +1,58 @@
 
-.columnaPizzas{
-    columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
+.perro{
+    border-radius: 100%;
+    margin-left: 7rem;
+    width: 4rem;
 }
-.Pizzas{
-    width: 100%;
-    
+.navegacion{
+    flex: 1;
+    text-align: center;
 }
 
+
+.lista{
+    flex: 1;
+    justify-content: space-around;
+}
+
+.columnaPizzas{
+    columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+.columnaPizzas li{
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside:avoid;
+    -moz-page-break-inside:avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+}
+.columnaPizzas label{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f05900;
+   
+}
+.card-title{
+    margin-left: 5rem; 
+    font-size:xx-large;
+    color: seashell;
+}
+.card-subtitle{
+    margin-left: 6rem;
+    font-size: large;
+    color: seashell;
+    
+}
+.cantidad{
+    max-width: 125px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding: 0;
+}
 .TituloPizzas{
     width: 100%;
-    background-color: red;
+    background-color: #f05900;
 }
