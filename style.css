@@ -2,7 +2,12 @@
 .perro{
     border-radius: 100%;
     margin-left: 7rem;
-    width: 4rem;
+    width: 5rem;
+}
+.historia{
+    border-radius: 100%;
+    width:4rem;
+    
 }
 .navegacion{
     flex: 1;
@@ -10,15 +15,10 @@
 }
 
 
-.lista{
-    flex: 1;
-    justify-content: space-around;
-}
-
 .columnaPizzas{
-    columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
+    columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 .columnaPizzas li{
     -webkit-column-break-inside: avoid;
@@ -55,4 +55,29 @@
 .TituloPizzas{
     width: 100%;
     background-color: #f05900;
+}
+
+.wasap{
+    height: 6rem;
+    width: 6rem;
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .columnaPizzas{
+        columns: 1;
+      -webkit-columns: 1;
+      -moz-columns: 1;
+    }
 }
