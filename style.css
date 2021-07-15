@@ -1,4 +1,5 @@
 
+
 .perro{
     border-radius: 100%;
     margin-left: 7rem;
@@ -33,6 +34,12 @@
     color: #f05900;
    
 }
+.ingredientes{
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    color: #888;
+    font-weight: 300;
+}
 .card-title{
     margin-left: 5rem; 
     font-size:xx-large;
@@ -44,18 +51,23 @@
     color: seashell;
     
 }
+.cantidad-producto{
+    padding: 1rem;
+}
 .cantidad{
-    max-width: 125px;
+    max-width: 70px;
     text-align: center;
     border: none;
     border-bottom: 1px solid;
     border-radius: 0;
     padding: 0;
 }
-.TituloPizzas{
+
+.titulos{
     width: 100%;
     background-color: #f05900;
 }
+
 
 .wasap{
     height: 6rem;
