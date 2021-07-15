@@ -2,33 +2,76 @@
 
 .perro{
     border-radius: 100%;
-    margin-left: 7rem;
+    margin-left: 5rem;
     width: 5rem;
+}
+.quenoma{
+
+    line-height: 5rem;
+    margin-bottom: 0;
+    padding-left: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .historia{
     border-radius: 100%;
     width:4rem;
+    height: 4rem;
     
 }
 .navegacion{
     flex: 1;
     text-align: center;
 }
+.cuerpo{
+    background-image: url(./assets/silueta.jpg);
+    background-position-x: right;
+    background-size: 43vh;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.cuerpo::before{
+    content: " ";
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: white;
+    opacity: 50%;
+}
+
+section.card, article.card{
+    background: none;
+}
+section.zuchi, article.zuchi{
+    background-image: url(./assets/siluetaZuchis.jpg);
+    background-position-x: left;
+    background-size: 43vh;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
 
 
-.columnaPizzas{
+.columnaCarta{
     columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+  background: none;
+  
 }
-.columnaPizzas li{
+.columnaCarta li{
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside:avoid;
     -moz-page-break-inside:avoid;
     page-break-inside: avoid;
     break-inside: avoid-column;
+    background: none;
 }
-.columnaPizzas label{
+.columnaCarta label{
     text-transform: uppercase;
     font-weight: bold;
     color: #f05900;
@@ -59,6 +102,8 @@
     text-align: center;
     border: none;
     border-bottom: 1px solid;
+    border-right: 1px solid;
+    
     border-radius: 0;
     padding: 0;
 }
@@ -87,7 +132,7 @@
 
 
 @media (max-width: 600px) {
-    .columnaPizzas{
+    .columnaCarta{
         columns: 1;
       -webkit-columns: 1;
       -moz-columns: 1;

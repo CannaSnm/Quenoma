@@ -18,50 +18,40 @@
 
 </head>
 
-<body>
+<body class="cuerpo">
 
   <header>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <img class="perro" src="assets/Logo.jpg" alt="Quenoma" />
-      <div class="navegacion">
-        <div>
-
-          <h1 class="titulo quenoma"> QUENOMA
-
+       <div class="d-flex">
+           <img class="perro" src="assets/Logo.jpg" alt="Quenoma" />
+          <h1 class="quenoma"> QUENOMA
+           
           </h1>
-
         </div>
+      <div class="navegacion">
+       
         <div class="d-flex justify-content-evenly">
 
-          <a class="nav-link p-0" href="#enjambre">
-            <img class="historia" src="assets/calzone.jpg" alt="calzone">
-            <h6>Enjambre</h6>
-          </a>
-
-
-
           <a class="nav-link p-0" href="#pizzas">
-            <img class="historia" src="assets/horno.jpg" alt="Pizzas al horno de barro">
+            <img class="historia" src="assets/tomate.jpg" alt="Pizzas al horno de barro">
             <h6> Pizzas</h6>
           </a>
 
-
-
           <a class="nav-link p-0" href="#empanadas">
-            <img class="historia" src="assets/calzone.jpg" alt="calzone">
+            <img class="historia" src="assets/empanadas2.jpg" alt="calzone">
             <h6> Empanadas</h6>
           </a>
 
-
-          <a class="nav-link p-0" href="#calzones">
+          <a class="nav-link p-0" href="#calzone">
             <img class="historia" src="assets/calzone.jpg" alt="calzone">
             <h6> Calzones</h6>
           </a>
 
-
-
-
+          <a class="nav-link p-0" href="#enjambre">
+            <img class="historia" src="assets/proyectoenjambre.jpg" alt="calzone">
+            <h6>Enjambre</h6>
+          </a>
         </div>
       </div>
 
@@ -70,7 +60,7 @@
   </header>
 
 <!--inicio seccion pizzas-->
-  <section class="card">
+  <section class="card zuchi">
 
 
     <div class="titulos" id="pizzas">
@@ -79,7 +69,8 @@
     </div>
     <div class="card-body">
 
-      <div class="card-text">
+      <div class="card-text ">
+        <div class="container">
         <div class="row">
           <!--Inicio carrousel-->
           <div class="col-12 col-md-5">
@@ -121,8 +112,8 @@
           </div> 
           <!--Cierre carrousel-->
           <!--inicio lista Pizzas-->
-          <div class="col">
-            <ul class="columnaPizzas">
+          <div class="col ">
+            <ul class="columnaCarta">
               <!--inicio producto-->
               <li class="list-group-item border-0">
                 <div class="form-check d-flex producto">
@@ -502,6 +493,7 @@
 
 
         </div>
+      </div>
 
       </div>
     </div>
@@ -510,196 +502,222 @@
 
 
 
-  <!--inicio seccion Empanadas-->
-  <section class="card">
+  <!--inicio seccion calzone-->
+  <section class="card zuchi">
 
 
-    <div class="titulos" id="empanadas">
-      <h5 class="card-title ">Empanadas</h5>
+    <div class="titulos" id="calzone">
+      <h5 class="card-title ">Calzone</h5>
 
     </div>
-    <div class="card-body">
-
-      <div class="card-text">
-        <div class="row">
-          <!--Inicio carrousel-->
-          <div class="col-12 col-md-5">
-            <div id="carouselEmpanadas" class="carousel slide" data-bs-ride="carousel">
-
-              <div class="carousel-inner">
-                <div class="carousel-item">
-                  <img src="assets/burger.jpg" class="d-block w-100" alt="Slide 1">
-                  <div class="carousel-caption d-none d-sm-block">
-                    <h5>Hamburguesa</h5>
-
-                  </div>
+    <div class="card-text">
+      <div class="container">
+      <div class="row">
+        <!--Inicio carrousel-->
+        <div class="col-12 col-md-5">
+          <div id="carouselcalzone" class="carousel slide" data-bs-ride="carousel">
+  
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="assets/burger.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Hamburguesa</h5>
+  
                 </div>
-                <div class="carousel-item">
-                  <img src="http://lorempixel.com/422/280/" class="d-block w-100" alt="Slide 2">
-                  <div class="carousel-caption d-none d-sm-block">
-                    <h5>Calzone</h5>
-
-                  </div>
-                </div>
-                <div class="carousel-item active">
-                  <img src="http://lorempixel.com/422/280/" class="d-block w-100" alt="Slide 3">
-                  <div class="carousel-caption d-none d-sm-block">
-                    <h5>Margarita</h5>
-
-                  </div>
-                </div>
-
               </div>
-              <a class="carousel-control-prev" href="#carouselEmpanadas" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselEmpanadas" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
-            </div> 
+              <div class="carousel-item">
+                <img src="http://lorempixel.com/422/280/" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Calzone</h5>
+  
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="http://lorempixel.com/422/280/" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Margarita</h5>
+  
+                </div>
+              </div>
+  
+            </div>
+            <a class="carousel-control-prev" href="#carouselcalzone" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselcalzone" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
           </div> 
-          <!--Cierre carrousel-->
-          <!--inicio lista Empanadas-->
-          <div class="col">
-            <ul class="columnaPizzas">
-              <!--inicio producto-->
-              <li class="list-group-item border-0">
-                <div class="form-check d-flex ">
-                  <input class="form-check-input checkboxes" data-check="arabe" type="checkbox"
-                    id="e-arabe-check">
-                  <label class="form-check-label px-3 " for="e-arabe-check">
-                    Arabe <span class="pl-3">$420</span>
-                  </label>
-                  <input class="form-control cantidad sumar" type="number" data-producto="arabe" data-precio="420"
-                    min="0"  placeholder="cantidad" aria-label="default input example" />
-
+        </div> 
+        <!--Cierre carrousel-->
+        <!--inicio lista calzone-->
+        <div class="col">
+          <ul class="columnaCarta">
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="calzoneSpacial" type="checkbox"
+                  id="p-calzoneSpacial-check">
                 </div>
-              </li>
-              <!--cierre producto-->
-              <!--inicio producto-->
-              <li class="list-group-item border-0">
-                <div class="form-check d-flex ">
-                  <input class="form-check-input checkboxes" data-check="carnesuave" type="checkbox"
-                    id="e-carnesuave-check">
-                  <label class="form-check-label px-3 " for="e-carnesuave-check">
-                    Carne suave <span class="pl-3">$420</span>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="p-calzoneSpacial-check">
+                  Espacial <span class="pl-3">$420</span>
                   </label>
-                  <input class="form-control cantidad sumar" type="number" data-producto="carnesuave" data-precio="420"
-                    min="0"  placeholder="cantidad" aria-label="default input example" />
-
+                <p class="ingredientes">
+                    salsa de tomate, muzza, jamón, morrones asados, verdeo, mayonesa casera
+                  </p>
                 </div>
-              </li>
-              <!--cierre producto-->
-              <!--inicio producto-->
-              <li class="list-group-item border-0">
-                <div class="form-check d-flex ">
-                  <input class="form-check-input checkboxes" data-check="jamonymuzza" type="checkbox"
-                    id="e-jamonymuzza-check">
-                  <label class="form-check-label px-3 " for="e-jamonymuzza-check">
-                    Jamón y muzza <span class="pl-3">$420</span>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="calzoneSpacial" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="pulenta" type="checkbox"
+                  id="p-pulenta-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="p-pulenta-check">
+                  pulenta <span class="pl-3">$420</span>
                   </label>
-                  <input class="form-control cantidad sumar" type="number" data-producto="jamonymuzza" data-precio="420"
-                    min="0"  placeholder="cantidad" aria-label="default input example" />
-
+                <p class="ingredientes">
+                    salsa de tomate, muzza, queso azul, champiñones, cebolla caramelizada y panceta
+                  </p>
                 </div>
-              </li>
-              <!--cierre producto-->
-              <!--inicio producto-->
-              <li class="list-group-item border-0">
-                <div class="form-check d-flex ">
-                  <input class="form-check-input checkboxes" data-check="roquefort" type="checkbox"
-                    id="e-roquefort-check">
-                  <label class="form-check-label px-3 " for="e-roquefort-check">
-                    Roquefort, jamón y muzza <span class="pl-3">$420</span>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="pulenta" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="calzoneCuatro" type="checkbox"
+                  id="p-calzoneCuatro-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="p-calzoneCuatro-check">
+                  Cuatro quesos <span class="pl-3">$420</span>
                   </label>
-                  <input class="form-control cantidad sumar" type="number" data-producto="roquefort" data-precio="420"
-                    min="0"  placeholder="cantidad" aria-label="default input example" />
-
+                <p class="ingredientes">
+                    aceite de oliva, queso azul, muzza, sardo y provolone
+                  </p>
                 </div>
-              </li>
-              <!--cierre producto-->
-              <!--inicio producto-->
-              <li class="list-group-item border-0">
-                <div class="form-check d-flex ">
-                  <input class="form-check-input checkboxes" data-check="polloP" type="checkbox"
-                    id="e-polloP-check">
-                  <label class="form-check-label px-3 " for="e-polloP-check">
-                    Pollo al pimentón <span class="pl-3">$420</span>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="calzoneCuatro" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="calzoneFugazza" type="checkbox"
+                  id="p-calzoneFugazza-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="p-calzoneFugazza-check">
+                  Fugazza <span class="pl-3">$420</span>
                   </label>
-                  <input class="form-control cantidad sumar" type="number" data-producto="polloP" data-precio="420"
-                    min="0"  placeholder="cantidad" aria-label="default input example" />
-
+                <p class="ingredientes">
+                   muzza, oliva, pimienta y cebolla morada
+                  </p>
                 </div>
-              </li>
-              <!--cierre producto-->
-              <!--inicio producto-->
-              <li class="list-group-item border-0">
-                <div class="form-check d-flex ">
-                  <input class="form-check-input checkboxes" data-check="polloVerdeo" type="checkbox"
-                    id="e-polloVerdeo-check">
-                  <label class="form-check-label px-3 " for="e-polloVerdeo-check">
-                    Pollo al verdeo <span class="pl-3">$420</span>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="calzoneFugazza" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="pepperoni" type="checkbox"
+                  id="p-pepperoni-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="p-pepperoni-check">
+                  Pepperoni <span class="pl-3">$420</span>
                   </label>
-                  <input class="form-control cantidad sumar" type="number" data-producto="polloVerdeo" data-precio="420"
-                    min="0"  placeholder="cantidad" aria-label="default input example" />
-
+                <p class="ingredientes">
+                    salsa de tomate, muzza, salami tipo pepperoni y morrones asados
+                  </p>
                 </div>
-              </li>
-              <!--cierre producto-->
-              <!--inicio producto-->
-              <li class="list-group-item border-0">
-                <div class="form-check d-flex ">
-                  <input class="form-check-input checkboxes" data-check="vegetales" type="checkbox"
-                    id="e-vegetales-check">
-                  <label class="form-check-label px-3 " for="e-vegetales-check">
-                    Vegetales asados <span class="pl-3">$420</span>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="pepperoni" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="calzoneCapresse" type="checkbox"
+                  id="p-calzoneCapresse-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="p-calzoneCapresse-check">
+                  Capresse <span class="pl-3">$420</span>
                   </label>
-                  <input class="form-control cantidad sumar" type="number" data-producto="vegetales" data-precio="420"
-                    min="0"  placeholder="cantidad" aria-label="default input example" />
-
+                <p class="ingredientes">
+                    salsa de tomate, muzza, albahaca, oliva y queso sardo
+                  </p>
                 </div>
-              </li>
-              <!--cierre producto-->
-              <!--inicio producto-->
-              <li class="list-group-item border-0">
-                <div class="form-check d-flex ">
-                  <input class="form-check-input checkboxes" data-check="capresse" type="checkbox"
-                    id="e-capresse-check">
-                  <label class="form-check-label px-3 " for="e-capresse-check">
-                    Capresse <span class="pl-3">$420</span>
-                  </label>
-                  <input class="form-control cantidad sumar" type="number" data-producto="capresse" data-precio="420"
-                    min="0"  placeholder="cantidad" aria-label="default input example" />
-
-                </div>
-              </li>
-              <!--cierre producto-->
-             
-
-
-
-            </ul>
-          </div>
-          <!--cierre lista Empanadas-->
-
-
-
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="calzoneCapresse" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+          </ul>
         </div>
-
-      </div>
+        <!--cierre lista calzone-->
+        </div>
+    </div>
     </div>
   </section>
-  <!--cierre seccion Empanadas-->
-
-  <article class="card">
+  <!--cierre seccion calzone-->
+  <!--inicio enjambre-->
+  <article class="card zuchi">
     <div class="titulos" id="enjambre">
       <h5 class="card-title">Proyecto Enjambre</h5>
     </div>
     <div class="card-body">
       <div class="card-text">
+        <div class="container">
         <div class="row">
+          <div class="col">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."</p>
+
+          </div>
           <div class="col-12 col-md-5">
             <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -723,19 +741,14 @@
               </a>
             </div>
           </div>
-          <div class="col cuerpo">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."</p>
-
-          </div>
+          
         </div>
+      </div>
       </div>
     </div>
 
   </article>
+  <!--cierre enjambre-->
 
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary wasap" data-bs-toggle="modal" data-bs-target="#exampleModal">
