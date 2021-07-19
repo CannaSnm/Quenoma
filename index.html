@@ -20,11 +20,11 @@
 
 <body class="cuerpo">
 
-  <header>
+  <header class="cabeza">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
        <div class="d-flex">
-           <img class="perro" src="assets/Logo.jpg" alt="Quenoma" />
+           <img class="perro" src="assets/Logo.jpg" alt="Estación quenoma" />
           <h1 class="quenoma"> QUENOMA
            
           </h1>
@@ -39,7 +39,7 @@
           </a>
 
           <a class="nav-link p-0" href="#empanadas">
-            <img class="historia" src="assets/empanadas2.jpg" alt="calzone">
+            <img class="historia" src="assets/empanadas3.jpg" alt="empanadas">
             <h6> Empanadas</h6>
           </a>
 
@@ -49,7 +49,7 @@
           </a>
 
           <a class="nav-link p-0" href="#enjambre">
-            <img class="historia" src="assets/proyectoenjambre.jpg" alt="calzone">
+            <img class="historia" src="assets/proyectoenjambre.jpg" alt="proyecto enjambre">
             <h6>Enjambre</h6>
           </a>
         </div>
@@ -60,7 +60,7 @@
   </header>
 
 <!--inicio seccion pizzas-->
-  <section class="card zuchi">
+  <section class="card">
 
 
     <div class="titulos" id="pizzas">
@@ -73,28 +73,28 @@
         <div class="container">
         <div class="row">
           <!--Inicio carrousel-->
-          <div class="col-12 col-md-5">
+          <div class="col-12 col-md-4">
             <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
 
               <div class="carousel-inner">
                 <div class="carousel-item">
-                  <img src="assets/burger.jpg" class="d-block w-100" alt="Slide 1">
+                  <img src="assets/margarita.jpg" class="d-block w-100" alt="Slide 1">
                   <div class="carousel-caption d-none d-sm-block">
-                    <h5>Hamburguesa</h5>
+                    <h5></h5>
 
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="http://lorempixel.com/422/280/" class="d-block w-100" alt="Slide 2">
+                  <img src="assets/pizza.jpg" class="d-block w-100" alt="Slide 2">
                   <div class="carousel-caption d-none d-sm-block">
-                    <h5>Calzone</h5>
+                    <h5></h5>
 
                   </div>
                 </div>
                 <div class="carousel-item active">
-                  <img src="http://lorempixel.com/422/280/" class="d-block w-100" alt="Slide 3">
+                  <img src="assets/vidrio.jpg" class="d-block w-100" alt="Slide 3">
                   <div class="carousel-caption d-none d-sm-block">
-                    <h5>Margarita</h5>
+                    <h5></h5>
 
                   </div>
                 </div>
@@ -500,44 +500,252 @@
   </section>
   <!--cierre seccion pizzas-->
 
+   <!--inicio seccion empanadas-->
+   <section class="card">
+
+
+    <div class="titulos" id="empanadas">
+      <h5 class="card-title ">Empanadas</h5>
+
+    </div>
+    <div class="card-body">
+    <div class="card-text">
+      <div class="container">
+      <div class="row">
+        <!--Inicio carrousel-->
+        <div class="col-12 col-md-4">
+          <div id="carouselempanada" class="carousel slide" data-bs-ride="carousel">
+  
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="assets/canasta1.jpg" class="d-block w-100" alt="Slide 1">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="assets/empanadas3.jpg" class="d-block w-100" alt="Slide 2">
+                
+              </div>
+              <div class="carousel-item active">
+                <img src="assets/empanadas.jpg" class="d-block w-100" alt="Slide 3">
+                
+              </div>
+  
+            </div>
+            <a class="carousel-control-prev" href="#carouselempanada" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselempanada" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div> 
+        </div> 
+        <!--Cierre carrousel-->
+        <!--inicio lista empanadas-->
+        <div class="col">
+          <ul class="columnaCarta">
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="arabe" type="checkbox"
+                  id="e-arabe-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="e-arabe-check">
+                  Arabe <span class="pl-3">$420</span>
+                  </label>
+                </div>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="arabe" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="carnesuave" type="checkbox"
+                  id="e-carnesuave-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="e-carnesuave-check">
+                  Carne suave <span class="pl-3">$420</span>
+                  </label>
+                </div>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="carnesuave" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="jamonymuzza" type="checkbox"
+                  id="e-jamonymuzza-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="e-jamonymuzza-check">
+                  Jamón y muzza <span class="pl-3">$420</span>
+                  </label>
+                </div>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="jamonymuzza" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="roqueJamon" type="checkbox"
+                  id="e-roqueJamon-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="e-roqueJamon-check">
+                  Roquefort, jamón y muzza<span class="pl-3">$420</span>
+                  </label>
+                </div>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="roqueJamon" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="pollopimenton" type="checkbox"
+                  id="e-pollopimenton-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="e-pollopimenton-check">
+                  Pollo al pimenton <span class="pl-3">$420</span>
+                  </label>
+                </div>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="pollopimenton" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="polloverdeo" type="checkbox"
+                  id="e-polloverdeo-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="e-polloverdeo-check">
+                  Pollo al verdeo <span class="pl-3">$420</span>
+                  </label>
+                </div>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="polloverdeo" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="vegetales" type="checkbox"
+                  id="e-vegetales-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="e-vegetales-check">
+                  Vegetales asados <span class="pl-3">$420</span>
+                  </label>
+                </div>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="vegetales" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            <!--inicio producto-->
+            <li class="list-group-item border-0">
+              <div class="form-check d-flex producto">
+                <div class="tilde">
+                <input class="form-check-input checkboxes" data-check="eCapresse" type="checkbox"
+                  id="e-eCapresse-check">
+                </div>
+                  <div class="descripcion">
+                <label class="form-check-label px-3 titulo-producto" for="e-eCapresse-check">
+                  Capresse <span class="pl-3">$420</span>
+                  </label>
+                </div>
+                <span class="cantidad-producto">
+                <input class="form-control cantidad sumar" type="number" data-producto="eCapresse" data-precio="420"
+                  min="0"  placeholder="0" aria-label="default input example" />
+                </span>
+  
+              </div>
+            </li>
+            <!--cierre producto-->
+            
+          </ul>
+        </div>
+        <!--cierre lista empanadas-->
+        </div>
+        </div>
+    </div>
+    </div>
+  </section>
+  <!--cierre seccion empanadas-->
+
 
 
   <!--inicio seccion calzone-->
-  <section class="card zuchi">
+  <section class="card">
 
 
     <div class="titulos" id="calzone">
       <h5 class="card-title ">Calzone</h5>
 
     </div>
+    <div class="card-body">
     <div class="card-text">
       <div class="container">
       <div class="row">
         <!--Inicio carrousel-->
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-4">
           <div id="carouselcalzone" class="carousel slide" data-bs-ride="carousel">
   
             <div class="carousel-inner">
               <div class="carousel-item">
-                <img src="assets/burger.jpg" class="d-block w-100" alt="Slide 1">
-                <div class="carousel-caption d-none d-sm-block">
-                  <h5>Hamburguesa</h5>
-  
-                </div>
+                <img src="assets/calzone.jpg" class="d-block w-100" alt="Slide 1">
+                
               </div>
               <div class="carousel-item">
-                <img src="http://lorempixel.com/422/280/" class="d-block w-100" alt="Slide 2">
-                <div class="carousel-caption d-none d-sm-block">
-                  <h5>Calzone</h5>
-  
-                </div>
+                <img src="assets/calzone2.jpg" class="d-block w-100" alt="Slide 2">
+                
               </div>
               <div class="carousel-item active">
-                <img src="http://lorempixel.com/422/280/" class="d-block w-100" alt="Slide 3">
-                <div class="carousel-caption d-none d-sm-block">
-                  <h5>Margarita</h5>
-  
-                </div>
+                <img src="assets/calzone3.jpg" class="d-block w-100" alt="Slide 3">
+                
               </div>
   
             </div>
@@ -699,10 +907,11 @@
         </div>
     </div>
     </div>
+    </div>
   </section>
   <!--cierre seccion calzone-->
   <!--inicio enjambre-->
-  <article class="card zuchi">
+  <article class="card">
     <div class="titulos" id="enjambre">
       <h5 class="card-title">Proyecto Enjambre</h5>
     </div>
@@ -718,6 +927,7 @@
               mollit anim id est laborum."</p>
 
           </div>
+          <!--inicio carrusel enjambre-->
           <div class="col-12 col-md-5">
             <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -741,6 +951,7 @@
               </a>
             </div>
           </div>
+          <!--cierre carrusel enjambre-->
           
         </div>
       </div>
@@ -749,6 +960,25 @@
 
   </article>
   <!--cierre enjambre-->
+  <!--inicio footer-->
+  <footer class="card">
+    <div class="card-body">
+      <div class="card-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 mb-5 zoom">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1WPYblk8P80NRAO6ykTU6RPWY4NDazO6X&z=13" width="640" height="480"></iframe>
+
+        </div>
+        <div class="col redes">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </footer>
 
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary wasap" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -756,9 +986,9 @@
   </button>
 
 
-  <!--<div class="wasap">
-      <a href="https://api.whatsapp.com/send?phone=5492216797230&text=¡HolaQuenoma!"><i class="fab fa-whatsapp"></i></a>
-    </div> !-->
+ 
+
+    <!--inicio modal de wasap-->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -778,6 +1008,7 @@
       </div>
     </div>
   </div>
+  <!--cierre modal de wasap-->
 
 
 
