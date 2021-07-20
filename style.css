@@ -131,16 +131,32 @@ section.card, article.card{
     
 }
 
+.zoom{
+    position: relative;
+}
+.zoom iframe{
+    aspect-ratio: 3/4;
+}
 .zoom::after{
     content: " ";
-    position: fixed;
+    position: absolute;
     top: 0%;
     bottom: 0%;
     left: 0%;
     right: 0%;
 
 }
+.pie{
+    background: none;
+}
+.piePag{
+    
+    margin-top: 5rem;
 
+}
+.redes{
+    font-size: xx-large;
+}
 
 @media (max-width: 600px) {
     .columnaCarta{
