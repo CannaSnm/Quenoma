@@ -1,11 +1,8 @@
 var cantMargarita = 0
-
 /* este es para el mensajito
         $("#mensaje").prop('innerText', "¡Hola Quenoma! queria pedir" + cantMargarita + "margarita")
         $("#wasap").prop('href', "https://api.whatsapp.com/send?phone=5492216797230&text=" + "¡Hola Quenoma! queria pedir" + cantMargarita + "margarita")
  */
-
-
 $(".sumar").change((evento)=>alCambiarNumero(evento)) // Buscamos Inputs tipo "number", cuando change ejecuta la funcion al cambiar//
 function alCambiarNumero (evento)
 { //funcion al cambiarNumero//
@@ -33,3 +30,23 @@ function Alcheckear (evento) //funcion Alcheckear recibe el evento"
             }
     }
     
+$('#BotonCompra').click(armarMensaje)//buscamos el ID botonCompra, al cliquear ejecuta la funcion armar mensaje
+function armarMensaje (){
+    var mensaje= ""
+    var total= 0
+    $( ".checkboxes" ).each(function(  ) {//bucamos todas las clases checkboxes, ejecuta la funcion 
+        //  console.log( index + ": " + this.dataset.check );
+        if (this.checked){ 
+           var productoNombre= (this.dataset.check) // si esta checkeado imprime el nombre del producto
+           var productoCantidad=( $('*[data-producto='+ this.dataset.check+']')[0].value)
+           var productoPrecio=( $('*[data-producto='+ this.dataset.check+']')[0].dataset.precio)
+           mensaje=mensaje+( productoCantidad + "  un. de  "+ productoNombre + ", ")
+          total=total+(productoCantidad*productoPrecio)
+      
+        }
+    
+    });
+mensaje="¡Hola Quenoma! queria pedirles "+mensaje+" $ "+total
+$("#mensaje").prop('innerText',mensaje)
+$("#wasap").prop('href', "https://api.whatsapp.com/send?phone=5492216797230&text=" + mensaje)
+}
