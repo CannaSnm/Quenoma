@@ -33,22 +33,22 @@
        
         <div class="d-flex justify-content-evenly">
 
-          <a class="nav-link p-0" href="#pizzas">
+          <a class="nav-link p-0 instagram" href="#pizzas">
             <img class="historia" src="assets/tomate.jpg" alt="Pizzas al horno de barro">
             <h6> Pizzas</h6>
           </a>
 
-          <a class="nav-link p-0" href="#empanadas">
+          <a class="nav-link p-0 instagram" href="#empanadas">
             <img class="historia" src="assets/empanadas3.jpg" alt="empanadas">
             <h6> Empanadas</h6>
           </a>
 
-          <a class="nav-link p-0" href="#calzone">
+          <a class="nav-link p-0 instagram" href="#calzone">
             <img class="historia" src="assets/calzone.jpg" alt="calzone">
             <h6> Calzones</h6>
           </a>
 
-          <a class="nav-link p-0" href="#enjambre">
+          <a class="nav-link p-0 instagram" href="#enjambre">
             <img class="historia" src="assets/proyectoenjambre.jpg" alt="proyecto enjambre">
             <h6>Enjambre</h6>
           </a>
@@ -109,8 +109,11 @@
                 <span class="visually-hidden">Next</span>
               </a>
             </div> 
+          
           </div> 
+
           <!--Cierre carrousel-->
+          
           <!--inicio lista Pizzas-->
           <div class="col ">
             <ul class="columnaCarta">
@@ -977,7 +980,7 @@
           <i class="fas fa-map-marker-alt"></i> Calle 56 nro°579 e/ 6 y 7
             </li>
             <li class="redes" >
-              <a href="https://www.instagram.com/estacionquenoma/" target="_blank">
+              <a href="https://www.instagram.com/estacionquenoma/" target="_blank" class="instagram">
               <i class="fab fa-instagram" ></i> Estación Quenoma
              </a>
             </li>
@@ -998,6 +1001,7 @@
  
 
     <!--inicio modal de wasap-->
+    
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -1005,12 +1009,19 @@
           <h5 class="modal-title" id="exampleModalLabel">Quiero pedir</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body" id="mensaje">
+        <div class="modal-body">
+          <div class="input-group m-3 formulario">
+            <label><input type="text" id="cliente" class="form-control datos" placeholder="Nombre" aria-label="Recipient's username" aria-describedby="button-addon2"></label>
+            <label><input type="text" id="direccion" class="form-control datos" placeholder="Dirección" aria-label="Recipient's username" aria-describedby="button-addon2"></label>
+            <label><input type="text" id="comentario" class="form-control datos" placeholder="comentario" aria-label="Recipient's username" aria-describedby="button-addon2"></label>
+          </div>
+          <div id="mensaje">
           ¡Hola Quenoma! queria pedir (autocompletar se puede?)
+        </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary"><a id="wasap"
+          <button type="button" class="btn btn-primary enviar"><a id="wasap"
               href="https://api.whatsapp.com/send?phone=5492216797230&text=¡HolaQuenoma!"><i
                 class="fab fa-whatsapp"></i></a></button>
         </div>

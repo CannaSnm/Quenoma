@@ -35,6 +35,8 @@
     background-position-y: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #f05900;
+     
     
 }/*
 .cuerpo::before{
@@ -48,12 +50,24 @@
     opacity: 50%;
 }
 */
+.instagram{
+    text-decoration: none;
+    color: #f05900;
+}
 section.card, article.card{
     background: none;
 }
 
 .producto{
     justify-content: space-between;
+}
+.formulario{
+    display: flow-root;
+    border: 1px solid;
+    width: auto;
+   }
+.datos{
+    margin: 1rem;
 }
 
 .columnaCarta{
@@ -127,15 +141,20 @@ section.card, article.card{
     text-align: center;
     display: flex;
     justify-content: center;
-    
-    
+       
+}
+.enviar{
+    background-color: #42fd0d;
+    border-color: #0dfd21;
+    border-radius: 100%;
 }
 
 .zoom{
     position: relative;
+    
 }
 .zoom iframe{
-    aspect-ratio: 3/4;
+    aspect-ratio: 7/5;
 }
 .zoom::after{
     content: " ";
@@ -147,7 +166,7 @@ section.card, article.card{
 
 }
 .pie{
-    background: none;
+    background: rgb(54, 54, 54);
 }
 .piePag{
     
@@ -156,6 +175,7 @@ section.card, article.card{
 }
 .redes{
     font-size: xx-large;
+    
 }
 
 @media (max-width: 600px) {

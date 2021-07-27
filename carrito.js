@@ -17,7 +17,7 @@ function alCambiarNumero (evento)
             .prop('checked', false)
         }
 
-} //hasta aca funcion al cambiar//
+} //hasta aca funcion al cambiarNumero//
 $(".checkboxes").change((evento)=>Alcheckear(evento)) //buscamos ($) la clase .checkboxes, cuando change ejecuta la funcion Alcheckear//
 function Alcheckear (evento) //funcion Alcheckear recibe el evento"
     { 
@@ -46,7 +46,14 @@ function armarMensaje (){
         }
     
     });
-mensaje="¡Hola Quenoma! queria pedirles "+mensaje+" $ "+total
+    
+  
+    
+mensaje="¡Hola Quenoma! queria pedirles "+mensaje+" $ "+total+" soy "+$('#cliente')[0].value+" dirección "+$('#direccion')[0].value+" "+$('#comentario')[0].value;
+
 $("#mensaje").prop('innerText',mensaje)
 $("#wasap").prop('href', "https://api.whatsapp.com/send?phone=5492216797230&text=" + mensaje)
-}
+} 
+ $('#cliente').change((evento)=>armarMensaje())
+ $('#direccion').change((evento)=>armarMensaje())
+ $('#comentario').change((evento)=>armarMensaje())
